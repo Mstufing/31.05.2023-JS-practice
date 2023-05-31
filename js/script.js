@@ -159,3 +159,89 @@
 
 //     res.innerHTML = emphasise(inp.value);
 // }
+
+// ? Task #11
+// ? Remove the Letters ABC
+
+// function removeABC(str) {
+// 	let regex = /[abc]/gi;
+// 		if(!str.includes('a') && !str.includes('b') && !str.includes('c'))
+// 			return null;
+// 		return str.replace(regex, "");
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let inp = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = removeABC(inp.value);
+// }
+
+// ? Task #12
+// ? Reverse Words Starting With a Particular Letter
+
+// function specialReverse(s, c) {
+// 	let myArr = s.split(" ");
+// 	let res = myArr.map(elem => elem.startsWith(c) ? (elem.split('').reverse()).join('') : elem )
+// 	return res.join(" ")
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let firstInp = document.querySelector(".inp1");
+//     let secondInp = document.querySelector(".inp2");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = specialReverse(firstInp.value, secondInp.value);
+// }
+
+// ? Task #13
+// ? Let's Sort This Array!
+
+// function ascDesNone(arr, str) {
+// 	if(str === "Asc")
+// 		return arr.sort((a,b) => a-b);
+// 	if(str === "Des")
+// 		return arr.sort((a,b) => b-a)
+// 	if(str === "None")
+// 	return arr;
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let secondInp = document.querySelector('.inp2');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = ascDesNone(firstInp.value.trim().split(" "), secondInp.value);
+// }
+
+// ? Task #14
+// ? Instant JAZZ
+
+// function jazzify(arr) {
+// 	return arr.map(elem => elem[elem.length -1] === "7" ? elem : elem + "7")
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = jazzify(firstInp.value.trim().split(" "));
+// }
+
+// ? Task #15
+// ? Sum of Number Elements in an Array
+
+// function numbersSum(arr) {
+// 	let res = arr.filter(elem => typeof elem === 'number');
+// 	if(res.length !== 0)
+// 		return 0;
+// 	return res.reduce((acc, cur) => Number(acc) + Number(cur));
+// }
