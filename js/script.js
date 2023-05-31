@@ -70,3 +70,92 @@
 
 //     myResult.innerHTML = sumArray(myInput.value.trim().split(" "));
 // }
+
+// ? Task #6
+// ? Remove Duplicates from an Array
+
+// function removeDups(arr) {
+// 	return arr.filter((elem, index) => arr.indexOf(elem) === index)
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let myInput = document.querySelector(".inp");
+//     let myResult = document.querySelector(".result");
+
+//     myResult.innerHTML = removeDups(myInput.value.trim().split(" "));
+// }
+
+// ? Task #7
+// ? Capitalize the First Letter of Each Word
+
+// function makeTitle(str) {
+// 	let arr = str.split(" ");
+// 	let res = arr.map(elem => elem[0].toUpperCase() + elem.slice(1, elem.length));
+// 	return res.join(" ")
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let inp = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = makeTitle(inp.value);
+// }
+
+// ? Task #8
+// ? Is the Word an Isogram?
+
+// function isIsogram(str) {
+// 	let arr = str.toLowerCase().split("").sort()
+// 	return arr.every((elem, index) => arr.indexOf(elem) === index)
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let inp = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = isIsogram(inp.value);
+// }
+
+// ? Task #9
+// ? Parity Bit Validation
+
+// function validateBinary(b) {
+// 	let arr = b.split("");
+// 	let res = arr.filter(elem => Number(elem) === 1)
+// 	if(res.length % 2 === 0)
+// 		return true;
+// 	return false;
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let inp = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = validateBinary(inp.value);
+// }
+
+// ? Task #10
+// ? Emphasise the Words
+
+// function emphasise(str) {
+// 	let arr = str.split(" ");
+// 	let res = arr.map(elem => typeof elem === "string" && elem.length > 0 ? elem[0].toUpperCase() + elem.slice(1, elem.length).toLowerCase() : elem)
+// 	return res.join(" ");
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => { 
+//     let inp = document.querySelector(".inp1");
+//     let res = document.querySelector(".result");
+
+//     res.innerHTML = emphasise(inp.value);
+// }
