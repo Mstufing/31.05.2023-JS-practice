@@ -245,3 +245,64 @@
 // 		return 0;
 // 	return res.reduce((acc, cur) => Number(acc) + Number(cur));
 // }
+
+// ? Task #16
+// ? Even or Odd: Which is Greater?
+
+// function evenOrOdd(str) {
+// 	let even  = str.split("").filter(elem => Number(elem) % 2 === 0)
+// 	let odd = str.split("").filter(elem => Number(elem) % 2 !== 0)
+	
+// 	let evenSum = even.reduce((acc, cur) => Number(acc) + Number(cur));
+// 	let oddSum = odd.reduce((acc, cur) => Number(acc) + Number(cur));
+// 		if(oddSum > evenSum)
+// 			return `Odd is greater than Even`;
+// 		else if(evenSum > oddSum)
+// 			return `Even is greater than Odd`;
+// 		return `Even and Odd are the same`;
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = evenOrOdd(firstInp.value);
+// }
+
+// ? Task #17
+// ? Remove Repeated Characters
+
+// function unrepeated(str) {
+// 	let arr =  str.split("").filter((elem, index) =>  str.split("").indexOf(elem) === index)
+// 	return arr.join("")
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = unrepeated(firstInp.value);
+// }
+
+// ? Task #18
+// ? Harshad Number
+
+function isHarshad(n) {	
+	let arr = n.toString().split("").reduce((acc, cur) => Number(acc) + Number(cur));
+	if(n % arr === 0)
+		return true;
+	return false;
+}
+
+let btn = document.querySelector('.btn');
+
+btn.onclick = () => {
+    let firstInp = document.querySelector('.inp1');
+    let res = document.querySelector('.result');
+
+    res.innerHTML = isHarshad(firstInp.value);
+}
