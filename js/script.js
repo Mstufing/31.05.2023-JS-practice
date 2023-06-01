@@ -291,18 +291,56 @@
 // ? Task #18
 // ? Harshad Number
 
-function isHarshad(n) {	
-	let arr = n.toString().split("").reduce((acc, cur) => Number(acc) + Number(cur));
-	if(n % arr === 0)
-		return true;
-	return false;
-}
+// function isHarshad(n) {	
+// 	let arr = n.toString().split("").reduce((acc, cur) => Number(acc) + Number(cur));
+// 	if(n % arr === 0)
+// 		return true;
+// 	return false;
+// }
 
-let btn = document.querySelector('.btn');
+// let btn = document.querySelector('.btn');
 
-btn.onclick = () => {
-    let firstInp = document.querySelector('.inp1');
-    let res = document.querySelector('.result');
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
 
-    res.innerHTML = isHarshad(firstInp.value);
-}
+//     res.innerHTML = isHarshad(firstInp.value);
+// }
+
+// ? Task #19
+// ? Shhh Be Quiet Function
+
+// function shhh(sentence) {
+// 	let arr = sentence.split(" ").map(elem => elem.toLowerCase());
+// 	let c = arr.join(" ")
+// 	if(sentence.length === 0)
+// 		return `"", whispered Edabit.`;
+// 	return `"${c[0].toUpperCase()}${c.slice(1, c.length)}", whispered Edabit.`;
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = shhh(firstInp.value);
+// }
+
+// ? Task #20
+// ? Clear the Fog
+
+// function clearFog(str) {
+// 	if(!str.match(/[fogFOG]/g))
+// 		return "It's a clear day!";
+// 	return str.replace(/[fogFOG]/g, "");
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let res = document.querySelector('.result');
+
+//     res.innerHTML = clearFog(firstInp.value);
+// }
